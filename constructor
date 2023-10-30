@@ -1,0 +1,42 @@
+# #Contractor is always asame name of your class
+# constructor is a special method of your class
+# contrutor stored by dynamic memory
+# con.denoted by InitFunction
+
+
+# constractor are usefull to dynamic memory of your class veriable
+# two types of your con.
+# user defined (parameterized con.)(parameter less)
+#class k under k variable(static)ko non instence variable khte hai
+class emp:
+  company = "Google"
+
+  def __init__(self, x, y, z, a):
+    self.name = x
+    self.lastname = y
+    self.salary = z
+    self.age = a
+
+  def show(self):
+    print("Emp name1:", self.name)
+    print("Emp lastname:", self.lastname)
+    print("Emp salary:", self.salary)
+    print("Emp age:", self.age)
+    print("Company name:", emp.company)
+
+  @staticmethod
+  def checkAge(a):
+    if(a<18):
+      print("he is not employee in Google")
+    else:
+      print("you are employee in Google")      
+
+
+name = input("enter the name:")
+lastname = input("enter the last name:")
+salary = int(input("enter the salary:"))
+age = int(input("enter the age:"))
+
+k = emp(name, lastname, salary, age)
+k.show()
+emp.checkAge(k.age)
